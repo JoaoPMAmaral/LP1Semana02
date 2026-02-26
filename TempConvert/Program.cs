@@ -6,7 +6,11 @@ namespace TempConvert
     {
         private static void Main(string[] args)
         {
-            Console.WriteLine("Hello LP!");
+            Console.Write("Temperature: ");
+            string temperature = Console.ReadLine();
+
+            Console.Write("Unit(C/F): ");
+            string units = Console.ReadLine();
         }
     }
 }
