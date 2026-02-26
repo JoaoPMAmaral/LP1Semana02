@@ -19,12 +19,18 @@ namespace TempConvert
             {
                 case "C":
                 convertedNumber = temp * 1.8 + 32;
-                Console.WriteLine($"{temperature} C = {convertedNumber:f2} F");
+                Console.WriteLine($"{temp:f2} C = {convertedNumber:f2} F");
+                Console.WriteLine($"Absolute value: {Math.Abs(temp):f2}");
                 break;
 
                 case "F":
                 convertedNumber = (temp-32)/1.8;
-                Console.WriteLine($"{temperature} F = {convertedNumber:f2} C");
+                Console.WriteLine($"{temp:f2} F = {convertedNumber:f2} C");
+                Console.WriteLine($"Absolute value: {Math.Abs(temp):f2}");
+                break;
+
+                default:
+                Console.WriteLine("Invalid unit.");
                 break;
             }
         }
